@@ -1,0 +1,99 @@
+/* Tailwind must come first */
+@import "tailwindcss";
+
+/* Load fonts safely inside the base layer */
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Judson:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+}
+
+/* Define theme variables */
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-karla: "Karla", sans-serif;
+  --font-inria: "Inria Serif", serif;
+  --font-judson: "Judson", serif;
+
+  --color-dark-1: #0E0E0E;
+  --color-dark-2: #212121;
+  --color-orange: #FFAB4F;
+  --color-dark-orange: #6C4825;
+  --color-gray: #AFAFAF;
+}
+
+/* Create custom utility class aliases */
+@utility font-roboto {
+  font-family: var(--font-roboto);
+}
+@utility font-karla {
+  font-family: var(--font-karla);
+}
+@utility font-inria {
+  font-family: var(--font-inria);
+}
+@utility font-judson {
+  font-family: var(--font-judson);
+}
+
+/* color */
+@utility dark-1 {
+  color: var(--color-dark-1);
+}
+@utility dark-2 {
+  color: var(--color-dark-2);
+}
+@utility orange {
+  color: var(--color-orange);
+}
+@utility dark-orange {
+  color: var(--color-dark-orange);
+}
+@utility gray {
+  color: var(--color-gray);
+}
+
+
+@layer utilities {
+  .btn-slide-fill {
+    @apply relative border border-orange p-1 px-8 font-bold font-karla rounded-md text-orange overflow-hidden transition-colors duration-300;
+  }
+
+  .btn-slide-fill::before {
+    content: "";
+    @apply absolute inset-0 bg-orange origin-left scale-x-0 transition-transform duration-300;
+  }
+
+  .btn-slide-fill:hover::before {
+    @apply scale-x-100;
+  }
+
+  .btn-slide-fill:hover {
+    @apply text-black;
+  }
+
+  .btn-slide-fill span {
+    @apply relative z-10;
+  }
+}
+
+@layer utilities {
+  .btn-slide-fill2 {
+    @apply relative border border-orange p-1 px-8 font-bold font-karla rounded-md text-orange overflow-hidden transition-colors duration-300;
+  }
+
+  .btn-slide-fill2::before {
+    content: "";
+    @apply absolute inset-0 bg-orange origin-left scale-y-0 transition-transform duration-300;
+  }
+
+  .btn-slide-fill2:hover::before {
+    @apply scale-y-100;
+  }
+
+  .btn-slide-fill2:hover {
+    @apply text-black;
+  }
+
+  .btn-slide-fill2 span {
+    @apply relative z-10;
+  }
+}
