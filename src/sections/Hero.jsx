@@ -28,13 +28,19 @@ const Hero = () => {
           <h1 className='font-inria text-4xl sm:text-5xl'>Traditional Artisian Bakery</h1>
           <p className='font-karla text-xs sm:text-sm'>A traditional artisan bakery uses high-quality ingredients and time-honored techniques, such as hand-shaping and long fermentation, to create handcrafted baked goods in smaller batches. These bakeries prioritize quality, flavor, and craftsmanship over mass production, often using natural starters and avoiding artificial preservatives</p>
           <div>
-            <Button label="Shop Now" />
+            <button className='btn-slide-fill'><span>Shop Now</span></button>
           </div>
         </div>
         <div className='flex flex-row md:flex-row gap-5 sm:gap-10 pt-10'>
-          <img src={facebook} alt="facebook" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
-          <img src={instagram} alt="instagram" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
-          <img src={whatsapp} alt="whatsapp" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
+          <a href="">
+            <img src={facebook} alt="facebook" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
+          </a>
+          <a href="">
+            <img src={instagram} alt="instagram" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
+          </a>
+          <a href="">
+            <img src={whatsapp} alt="whatsapp" className='w-[24px] h-[24px] md:w-[36px] md:h-[36px]'/>
+          </a>
         </div>
       </div>
     </section>

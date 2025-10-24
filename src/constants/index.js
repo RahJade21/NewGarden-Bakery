@@ -1,5 +1,6 @@
 import { bread1, bread2, bread3, bread4 } from '../assets/images'
 import { info } from '../assets/icons'
+import { client1, client2, client3, client4, client5, client6, client7, client8, client9, client10, client11 } from '../assets/images'
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -16,7 +17,7 @@ export const cardItems = [
   { imgUrl: bread4, name: "Classic Baguette", cost: "4.50", weight: "350g", info: info, description: "Freshly baked bread with organic ingredients." },
   { imgUrl: bread3, name: "Honey Oat Bread", cost: "7.00", weight: "410g", info: info, description: "Freshly baked bread with organic ingredients." },
   { imgUrl: bread4, name: "Cinnamon Raisin Loaf", cost: "8.20", weight: "430g", info: info, description: "Freshly baked bread with organic ingredients." },
-  { imgUrl: bread1, name: "Walnut Whole Wheat", cost: "8.50", weight: "400g", info: info, description: "Freshly baked bread with organic ingredients." },
+  { imgUrl: bread1, name: "Walnut Wheat", cost: "8.50", weight: "400g", info: info, description: "Freshly baked bread with organic ingredients." },
   { imgUrl: bread2, name: "Rustic Ciabatta", cost: "5.80", weight: "380g", info: info, description: "Freshly baked bread with organic ingredients." },
 ];
 
@@ -34,3 +35,17 @@ export const aboutUs = [
     description: "Discover Basketeer's Classic Sponge Cakes — soft, airy layers crafted with timeless techniques and the finest ingredients. Each cake is elegantly shaped into meaningful letters or words, creating a beautiful, personal gift. Finished with fresh seasonal fruits, delicate macarons, or floral accents, these cakes are perfect for birthdays, anniversaries, or heartfelt surprises."
   }
 ]
+
+export const clientItems = [
+  { image: client1, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+  { image: client2, classes: 'col-span-2 row-span-2 rounded-2xl', text: "They were amazing to work with!" },
+  { image: client3, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+  { image: client4, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+  { image: client5, classes: 'row-span-2 rounded-2xl', text: "They were amazing to work with!" },
+  { image: client6, classes: 'row-span-2 rounded-2xl', text: "They were amazing to work with!" },
+  { image: client7, classes: 'row-span-2 rounded-2xl', text: "They were amazing to work with!" },
+  { image: client8, classes: 'row-span-2 rounded-2xl', text: "They were amazing to work with!" },
+  { image: client9, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+  { image: client10, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+  { image: client11, classes: 'rounded-2xl', text: "They were amazing to work with!" },
+];

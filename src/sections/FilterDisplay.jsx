@@ -9,7 +9,7 @@ const FilterDisplay = () => {
           <CardItems />
         </div>
         <div className="bg-dark-1 py-10 pb-14">
-          <button className="btn-slide-fill2"><span>View All</span></button>
+          <button className="btn-slide-fill2 cursor-pointer"><span>View All</span></button>
         </div>
       </div>
     </section>

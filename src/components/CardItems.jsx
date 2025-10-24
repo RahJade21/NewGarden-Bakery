@@ -2,16 +2,16 @@ import { cardItems } from "../constants"
 
 export const CardItems = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 font-inria bg-dark-1'>
+    <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 font-inria bg-dark-1'>
       {cardItems.map((item, index) => (
-        <div key={index} className="w-full h-full bg-dark-2 hover:bg-dark-orange duration-200 py-14 flex flex-col items-center rounded-xl">
+        <div key={index} className="w-full h-full bg-dark-2 hover:bg-dark-orange duration-200 py-14 px-2 flex flex-col items-center rounded-xl">
           <img src={item.imgUrl} alt={item.name} className="w-[260px]" />
-          <div className="w-full flex justify-between items-end pt-12 px-10">
+          <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-10 pt-12 px-5 md:px-10">
             <div>
               <p className="text-gray">$ {item.cost}</p>
-              <p className="text-xl">{item.name}</p>
+              <p className="text-2xl">{item.name}</p>
             </div>
-            <div className="pb-1 gap-1 flex flex-col justify-end items-end">
+            <div className="pb-1 gap-1 flex flex-col justify-end items-start md:items-end">
               <div className="relative group">
                 <img
                   src={item.info}
@@ -32,7 +32,7 @@ export const CardItems = () => {
                 </div>
               </div>
               <p className="font-judson text-gray">{item.weight}</p>
-              <button className="btn-slide-fill cursor-pointer"><span>Add</span></button>
+              <button className="btn-slide-fillr cursor-pointer"><span>Add</span></button>
             </div>
           </div>
         </div>

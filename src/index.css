@@ -76,6 +76,29 @@
 }
 
 @layer utilities {
+  .btn-slide-fillr {
+    @apply relative border border-orange p-1 px-8 font-bold font-karla rounded-md text-orange overflow-hidden transition-colors duration-300;
+  }
+
+  .btn-slide-fillr::before {
+    content: "";
+    @apply absolute inset-0 bg-orange origin-right scale-x-0 transition-transform duration-300;
+  }
+
+  .btn-slide-fillr:hover::before {
+    @apply scale-x-100;
+  }
+
+  .btn-slide-fillr:hover {
+    @apply text-black;
+  }
+
+  .btn-slide-fillr span {
+    @apply relative z-10;
+  }
+}
+
+@layer utilities {
   .btn-slide-fill2 {
     @apply relative border border-orange p-1 px-8 font-bold font-karla rounded-md text-orange overflow-hidden transition-colors duration-300;
   }
